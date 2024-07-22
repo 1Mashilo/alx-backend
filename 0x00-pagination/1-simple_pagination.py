@@ -8,6 +8,7 @@ the start and end indices for pagination.
 import csv
 from typing import List, Tuple
 
+
 class Server:
     """Server class to paginate a database of popular baby names."""
 
@@ -26,7 +27,8 @@ class Server:
             page_size (int): the number of items per page
 
         Returns:
-            Tuple[int, int]: a tuple containing the start index and the end index
+            Tuple[int, int]: a tuple containing the start index and the end
+            index
         """
         start_index = (page - 1) * page_size
         end_index = page * page_size
@@ -63,4 +65,3 @@ class Server:
         if start_index >= len(dataset):
             return []
         return dataset[start_index:end_index]
-
