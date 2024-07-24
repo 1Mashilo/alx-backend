@@ -6,6 +6,7 @@ implements a basic caching system without any eviction policy.
 
 from base_caching import BaseCaching
 
+
 class BasicCache(BaseCaching):
     """
     BasicCache class inherits from BaseCaching and provides a simple
