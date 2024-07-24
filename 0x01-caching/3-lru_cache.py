@@ -6,6 +6,7 @@ implements a Least Recently Used (LRU) caching system.
 
 from base_caching import BaseCaching
 
+
 class LRUCache(BaseCaching):
     """
     LRUCache class that inherits from BaseCaching and implements LRU caching.
@@ -16,7 +17,7 @@ class LRUCache(BaseCaching):
         Initialize the LRUCache class.
         """
         super().__init__()
-        self.usage = []  # List to track the order of item usage
+        self.usage = []
 
     def put(self, key, item):
         """
@@ -56,4 +57,3 @@ class LRUCache(BaseCaching):
         self.usage.remove(key)
         self.usage.append(key)
         return self.cache_data[key]
-
