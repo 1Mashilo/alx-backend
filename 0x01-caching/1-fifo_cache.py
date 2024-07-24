@@ -4,6 +4,7 @@ This module defines the FIFOCache class, which inherits from BaseCaching and
 implements a FIFO caching system.
 """
 
+
 from base_caching import BaseCaching
 
 class FIFOCache(BaseCaching):
